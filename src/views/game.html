@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/overlay.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <div class="container">
+      <div class="shadow-lg p-3 mb-5 bg-info rounded mt-5">
+        <p class="display-4 text-white fw-bold">
+          Let's play rock, paper, scissors
+        </p>
+        <p class="display-5 text-white">
+          You have chosen the mode with <span id="modeKey"></span> moves
+        </p>
+        <div class="row justify-content-around">
+          <div id="dynamicButtonsDiv"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/core/gameEngine.js"></script>
+</html>
