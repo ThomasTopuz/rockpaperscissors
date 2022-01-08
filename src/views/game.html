@@ -16,16 +16,18 @@
 
   <body class="bg-dark">
     <div class="container">
-      <div class="shadow-lg p-3 mb-5 bg-info rounded mt-5">
-        <p class="display-4 text-white fw-bold">
-          Let's play rock, paper, scissors
+      <div class="shadow-lg p-3 mb-5 bg-info rounded mt-5 d-flex flex-column align-items-center justify-content-center"">
+        <p class="display-4 text-white font-weight-bold">
+          Giochiamo a carta, forbice, sasso
         </p>
-        <p class="display-5 text-white">
-          You have chosen the mode with <span id="modeKey"></span> moves
+        <p class="display-5 text-white font-weight-bold">
+          Hai scelto la modalità con <span id="modeKey"></span> mosse possibili,
+          scegline una e sfida il computer!
         </p>
-        <div class="row justify-content-around">
-          <div id="dynamicButtonsDiv"></div>
-        </div>
+        <div
+          id="dynamicButtonsDiv"
+          class="row justify-content-center p-5"
+        ></div>
       </div>
     </div>
   </body>

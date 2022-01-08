@@ -27,6 +27,23 @@ Carta,1,1,2,2,2,2,0,1,1
 Spugna,1,1,1,2,2,2,2,0,1
 Umano,1,1,1,1,2,2,2,2,0`;
 
+const mode15Csv =
+    `Forbice,Fuoco,Sasso,Pistola,Fulmine,Diavolo,Drago,Acqua,Aria,Carta,Spugna,Lupo,Albero,Umano,Serpente
+Forbice,0,1,1,1,1,1,1,1,2,2,2,2,2,2,2
+Fuoco,2,0,1,1,1,1,1,1,1,2,2,2,2,2,2
+Sasso,2,2,0,1,1,1,1,1,1,1,2,2,2,2,2
+Pistola ,2,2,2,0,1,1,1,1,1,1,1,2,2,2,2
+Fulmine,2,2,2,2,0,1,1,1,1,1,1,1,2,2,2
+Diavolo,2,2,2,2,2,0,1,1,1,1,1,1,1,2,2
+Drago,2,2,2,2,2,2,0,1,1,1,1,1,1,1,2
+Acqua,2,2,2,2,2,2,2,0,1,1,1,1,1,1,1
+Aria,1,2,2,2,2,2,2,2,0,1,1,1,1,1,1
+Carta,1,1,2,2,2,2,2,2,2,0,1,1,1,1,1
+Spugna,1,1,1,2,2,2,2,2,2,2,0,1,1,1,1
+Lupo,1,1,1,1,2,2,2,2,2,2,2,0,1,1,1
+Albero,1,1,1,1,1,2,2,2,2,2,2,2,0,1,1
+Umano,1,1,1,1,1,1,2,2,2,2,2,2,2,0,1
+Serpente,1,1,1,1,1,1,1,2,2,2,2,2,2,2,0`;
 
 const getModeTable = () => {
     const getTableFromCsv = (csv) => csv.split("\n").map(function (row) { return row.split(","); });
@@ -34,6 +51,7 @@ const getModeTable = () => {
         case 3: return getTableFromCsv(mode3Csv);
         case 5: return getTableFromCsv(mode5Csv);
         case 9: return getTableFromCsv(mode9Csv);
+        case 15: return getTableFromCsv(mode15Csv);
     }
 }
 
