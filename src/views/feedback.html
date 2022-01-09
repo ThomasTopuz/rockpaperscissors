@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risultato</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-primary">
+    <div class="container">
+      <div class="shadow-lg p-3 mb-5 bg-info rounded mt-5 d-flex flex-column
+      align-items-center justify-content-center"">
+      <p id="titleText" class="display-4 text-white font-weight-bold"></p>
+      <p id="explanationText" class="display-5 text-white font-weight-bold"></p>
+      <video id="resultVideo" muted autoplay width="400" class="mt-5 rounded">
+        <source id="resultVideoSrc" type="video/mp4" src="" />
+        Your browser does not support HTML video.
+      </video>
+      <div class="row justify-content-between p-5 w-50 border-top mt-5">
+        <button class="btn btn-light" onclick="history.back()">Rigioca</button>
+        <a class="btn btn-primary text-white" href="../views/index.html"
+          >Menu principale</a
+        >
+      </div>
+    </div>
+  </body>
+  <script src="../js/dynamicFeedback.js"></script>
+</html>

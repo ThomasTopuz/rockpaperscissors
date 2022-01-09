@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gioco</title>
     <link rel="stylesheet" href="../styles/overlay.css" />
     <link
       rel="stylesheet"
@@ -13,16 +13,14 @@
       crossorigin="anonymous"
     />
   </head>
-
-  <body class="bg-dark">
+  <body class="bg-primary">
     <div class="container">
       <div class="shadow-lg p-3 mb-5 bg-info rounded mt-5 d-flex flex-column align-items-center justify-content-center"">
         <p class="display-4 text-white font-weight-bold">
           Giochiamo a carta, forbice, sasso
         </p>
-        <p class="display-5 text-white font-weight-bold">
-          Hai scelto la modalità con <span id="modeKey"></span> mosse possibili,
-          scegline una e sfida il computer!
+        <p id="innerExplanation" class="display-5 text-white font-weight-bold">
+        
         </p>
         <div
           id="dynamicButtonsDiv"

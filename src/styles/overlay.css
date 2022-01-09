@@ -23,7 +23,7 @@
   right: 0;
   opacity: 0;
   transition: 0.3s;
-  background-color: #3a3a3a;
+  background-color: #007bff;
 }
 
 .overlay-container:hover .overlay {
