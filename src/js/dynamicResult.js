@@ -1,7 +1,7 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 let titleText = "";
-let videoUrl = "../assets/feedback/";
+let videoUrl = "../assets/result/";
 
 switch (params.result) {
     case "win": {
@@ -19,7 +19,7 @@ switch (params.result) {
         videoUrl += "draw.mp4";
         break;
     }
-    default: window.location.href = "./index.html"
+    default: window.location.href = "../index.html"
 }
 
 document.getElementById("titleText").innerHTML = titleText;

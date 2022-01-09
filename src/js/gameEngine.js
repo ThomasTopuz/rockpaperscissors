@@ -7,7 +7,7 @@ const mode3Csv =
 
 const mode5Csv =
     `Sasso,Carta,Forbice,Spock,Lucertola
-Sasso,0,1,1,2,2
+Sasso,0,1,2,1,2
 Carta,2,0,1,2,1
 Forbice,1,2,0,1,2
 Spock,2,1,2,0,1
@@ -74,7 +74,7 @@ const handleChoiceSubmit = ($event) => {
     const randomValue = Math.floor(Math.random() * (getModeChoices().length - 1 + 1) + 1);
     const table = getModeTable()
     const result = parseInt(table[getModeChoices().indexOf($event.target.innerText) + 1][randomValue]);
-    let redirectUrl = "./feedback.html?";
+    let redirectUrl = "./result.html?";
     switch (result) {
         case 0: {
             redirectUrl += `result=draw&`;
@@ -88,6 +88,7 @@ const handleChoiceSubmit = ($event) => {
             redirectUrl += `result=win&`;
             break;
         }
+        default: debugger;
     }
     redirectUrl += `user=${event.target.innerText}&pc=${table[randomValue][0].trim()}`;
     window.location.href = redirectUrl;

@@ -1,0 +1,8 @@
+Coltello,Fuoco,Orologio,Topo,Olio,Musica,Cavo
+Coltello,0,1,1,1,1,2,2
+Fuoco,2,0,1,1,1,1,2
+Orologio,2,2,0,1,1,1,1
+Topo,2,2,2,0,1,1,1
+Olio,2,2,2,2,0,1,1
+Musica,1,2,2,2,2,0,1
+Cavo,1,1,2,2,2,2,0

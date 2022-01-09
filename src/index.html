@@ -10,7 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/overlay.css" />
+    <link rel="stylesheet" href="./styles/overlay.css" />
     <title>Menu principale</title>
   </head>
 
@@ -23,49 +23,39 @@
           Giochiamo a carta, forbice, sasso
         </p>
         <p class="display-5 text-white font-weight-bold">
-          Ma qui si pensa in grande... Scegli una opzione sottostante
+          Ma qui si pensa in grande... Scegli una variante sottostante
         </p>
         <div class="row justify-content-around d-flex">
-          <a href="./game.html?mode=3">
+          <a href="./views/game.html?mode=3">
             <div class="overlay-container" id="game-3">
-              <img
-                src="../assets/game-3.jpg"
-                width="200"
-                alt="Avatar"
-                class="image"
-              />
+              <img src="./assets/game-3.jpg" alt="Avatar" class="image" />
               <div class="overlay">
                 <div class="overlay-text">3 mosse</div>
               </div>
             </div>
           </a>
 
-          <a href="./game.html?mode=5">
+          <a href="./views/game.html?mode=5">
             <div class="overlay-container" id="game-5">
-              <img
-                src="../assets/game-5.jpg"
-                width="200"
-                alt="Avatar"
-                class="image"
-              />
+              <img src="./assets/game-5.jpg" alt="Avatar" class="image" />
               <div class="overlay">
                 <div class="overlay-text">5 mosse</div>
               </div>
             </div>
           </a>
 
-          <a href="./game.html?mode=9">
+          <a href="./views/game.html?mode=9">
             <div class="overlay-container" id="game-9">
-              <img src="../assets/game-9.jpg" alt="Avatar" class="image" />
+              <img src="./assets/game-9.jpg" alt="Avatar" class="image" />
               <div class="overlay">
                 <div class="overlay-text">9 mosse</div>
               </div>
             </div>
           </a>
 
-          <a href="./game.html?mode=15">
+          <a href="./views/game.html?mode=15">
             <div class="overlay-container" id="game-15">
-              <img src="../assets/game-15.jpg" alt="Avatar" class="image" />
+              <img src="./assets/game-15.jpg" alt="Avatar" class="image" />
               <div class="overlay">
                 <div class="overlay-text">15 mosse</div>
               </div>
@@ -76,7 +66,7 @@
           >
             <div>
               <p class="font-weight-bold text-white">
-                oppure inserisci dell regole di gioco personalizzate
+                oppure inserisci delle regole di gioco personalizzate
               </p>
             </div>
             <div class="input-group">
@@ -105,10 +95,9 @@
   </body>
   <script>
     const customGame = () => {
-      debugger;
       const csvValue = document.getElementById("csvInput").value;
       if (!csvValue) return;
-      window.location.href = `./game.html?mode=${csvValue.replaceAll(
+      window.location.href = `./views/game.html?mode=${csvValue.replaceAll(
         "\n",
         "|"
       )}`;

@@ -18,17 +18,24 @@
       align-items-center justify-content-center"">
       <p id="titleText" class="display-4 text-white font-weight-bold"></p>
       <p id="explanationText" class="display-5 text-white font-weight-bold"></p>
-      <video id="resultVideo" muted autoplay width="400" class="mt-5 rounded">
+      <video
+        id="resultVideo"
+        muted
+        autoplay
+        loop
+        width="400"
+        class="mt-5 rounded"
+      >
         <source id="resultVideoSrc" type="video/mp4" src="" />
         Your browser does not support HTML video.
       </video>
       <div class="row justify-content-between p-5 w-50 border-top mt-5">
         <button class="btn btn-light" onclick="history.back()">Rigioca</button>
-        <a class="btn btn-primary text-white" href="../views/index.html"
+        <a class="btn btn-primary text-white" href="../index.html"
           >Menu principale</a
         >
       </div>
     </div>
   </body>
-  <script src="../js/dynamicFeedback.js"></script>
+  <script src="../js/dynamicResult.js"></script>
 </html>
